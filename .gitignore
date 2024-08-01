@@ -1,2 +1,8 @@
 node_modules
-./build
+./config
+./public
+./src
+./package-lock.json
+./package.json
+./tsconfig.json
+./webpac.config.json
