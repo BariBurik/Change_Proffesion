@@ -1,0 +1,15 @@
+.about {
+    margin-top: 80px;
+    padding: 0 65px;
+    min-height: 662px;
+    background-color: #F6F8FA;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+

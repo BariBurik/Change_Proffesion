@@ -1,0 +1,30 @@
+.form {
+    margin-bottom: 80px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+}
+
+.content {
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.item {
+    width: 385px;
+}
+
+@media (max-width: 375px) {
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

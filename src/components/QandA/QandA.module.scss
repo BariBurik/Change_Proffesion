@@ -1,0 +1,51 @@
+.QandA {
+    margin-top: 80px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    max-width: 1010px;
+}
+
+.item {
+    margin-bottom: 25px;
+    padding-top: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    border-top: 1px solid #F6F8FA;
+}
+
+.item_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 25px;
+
+    &:hover {
+        .button {
+            border: #2A6CEA 1px solid;
+            color: #2A6CEA;
+        }
+        p {
+            color: #2A6CEA;
+        }
+    }
+}
+
+.button {
+    cursor: pointer;
+    background-color: #fff;
+    border: #191C1F 1px solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}

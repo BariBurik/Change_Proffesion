@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Graphik LCG';
+    src: local('Graphik LCG Semibold'), local('GraphikLCG-Semibold'),
+        url('@/assets/fonts/GraphikLCG/GraphikLCG-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.button {
+    font-family: 'Graphik LCG';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    border-radius: 4px;
+    min-width: 150px;
+    height: 65px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color_primary {
+    background-color: #2A6CEA;
+    color: #fff;
+
+    &:hover {
+        background-color: #397DFF;
+    }
+}
+
+.color_default {
+    background-color: #ECEFF2;
+
+    &:hover {
+        background-color: #fff;
+    }
+}

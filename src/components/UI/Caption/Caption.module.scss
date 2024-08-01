@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Graphik LCG';
+    src: local('Graphik LCG Regular'), local('GraphikLCG-Regular'),
+        url('@/assets/fonts/GraphikLCG/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.caption { 
+    font-family: 'Graphik LCG';
+    font-weight: normal;
+    color: #191C1F;
+}
+
+.size_12 {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 12%;
+}

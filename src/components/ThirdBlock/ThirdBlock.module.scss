@@ -1,0 +1,43 @@
+.third_block {
+    margin-top: 80px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.img {
+    background-image: url('@/assets/imgs/thirdBlock2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .img {
+       width: 351px;
+       height: 265px; 
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+}

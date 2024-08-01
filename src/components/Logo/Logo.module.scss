@@ -1,0 +1,66 @@
+.menu_logo_container {
+    display: flex;
+}
+
+.menu_logo {
+    display: flex;
+}
+
+.ellipse_container {
+    &:nth-child(1) {
+        z-index: 1;
+    }
+
+    &:nth-child(2) {
+        z-index: 0;
+        position: absolute;
+        left: 19.6%;
+    }
+}
+
+
+.logo_title {
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .ellipse_container {
+        &:nth-child(1) {
+            z-index: 1;
+        }
+    
+        &:nth-child(2) {
+            z-index: 0;
+            position: absolute;
+            left: 4.7%;
+        }
+    }    
+}
+
+@media (max-width: 375px) {
+    .ellipse_container {
+        &:nth-child(1) {
+            z-index: 1;
+        }
+    
+        &:nth-child(2) {
+            z-index: 0;
+            position: absolute;
+            left: 9.5%;
+        }
+    }    
+}
+
+@media (max-width: 320px) {
+    .ellipse_container {
+        &:nth-child(1) {
+            z-index: 1;
+        }
+    
+        &:nth-child(2) {
+            z-index: 0;
+            position: absolute;
+            left: 11%;
+        }
+    }    
+}

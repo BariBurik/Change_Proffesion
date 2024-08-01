@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Graphik LCG';
+    src: local('Graphik LCG Regular'), local('GraphikLCG-Regular'),
+        url('@/assets/fonts/GraphikLCG/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+  margin: 10px 0;
+  min-width: 270px;
+  max-width: 400px;
+}
+
+.entryarea {
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+}
+
+.label {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-family: 'Graphik LCG';
+  color: #5E646A;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  outline: none;
+  border: none;
+  background-color: #F6F8FA;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 0 18px;
+  border-radius: 10px;
+  
+  &::placeholder {
+    visibility: hidden;
+  }
+
+  &:focus {
+    background-color: #fff;
+    border: #C2C8CD 2px solid;
+
+    &::placeholder {
+      visibility: visible;
+      font-weight: normal;
+      font-family: 'Graphik LCG';
+      color: #C2C8CD;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
+
+.input:focus + .label {
+  color: #83898F;
+  font-size: 14px;
+  font-family: 24px;
+  top: 4%
+}
+
+.checked_agree {
+  border: #ECEFF2 2px solid; 
+  background-color: #fff; 
+  
+  & + .label {
+    color: #83898F;
+    font-size: 14px;
+    font-family: 24px;
+    top: 4%
+  }
+}
+
+.ellipse {
+  font-size: 5px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  position: absolute;
+  top: 38%;
+  left: 100%;
+  
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+  }
+}
+
+.agree_ellipse {
+  background-color: #25CD82;
+  &::after {
+    content: "✓";
+  }
+}
+
+.checked_disagree {
+  border: #F13636 2px solid; 
+  background-color: #fff; 
+  
+  & + .label {
+    color: #83898F;
+    font-size: 14px;
+    font-family: 24px;
+    top: 4%
+  }
+}
+
+.danger_ellipse { 
+  background-color: #F13636;
+
+  &::after {
+    content: "✖";
+  }
+}

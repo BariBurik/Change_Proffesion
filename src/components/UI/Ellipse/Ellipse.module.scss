@@ -1,0 +1,54 @@
+.ellipse { 
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.color_black {
+    background-color: #191C1F;
+}
+
+.color_dark-grey {
+    background-color: #5E646A;
+}
+
+.color_grey {
+    background-color: #83898F;
+}
+
+.color_light-grey {
+    background-color: #C2C8CD;
+}
+
+.color_extralight-grey {
+    background-color: #ECEFF2;
+}
+
+.color_white {
+    background-color: #FFFFFF;
+}
+
+.color_dangerous {
+    background-color: #F13636;
+}
+
+.color_green-success {
+    background-color: #25CD82;
+}
+
+.color_primary {
+    background-color: #2A6CEA;
+
+    &:hover {
+        background-color: #397DFF;
+    }
+
+    &:disabled {
+        background-color: #ABCAE6;
+    }
+}
+
+.size_24 {
+    height: 24px;
+    width: 24px;
+}

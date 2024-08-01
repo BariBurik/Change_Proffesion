@@ -1,0 +1,51 @@
+.how_it_work { 
+    margin-top: 80px;
+}
+
+.items {
+    display: flex;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 165px;
+    width: 280px;
+}
+
+.img {
+    margin-bottom: 15px;
+    width: 72px;
+    height: 72px;
+}
+
+@media (max-width: 768px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .item {
+        flex-direction: row;
+        height: 75px;
+        width: 340px;
+        gap: 15px;
+    }
+
+    .img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 375px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
